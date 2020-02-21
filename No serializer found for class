@@ -1,0 +1,50 @@
+
+No serializer found for class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor
+
+
+
+Type definition error: [simple type, class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor];
+nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found 
+for class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor and no properties discovered to create 
+BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+
+
+You can Ignore to produce JSON output of a property by
+
+
+@JsonIgnore 
+Or If you have any lazy loaded properties having a relationship. You can use this annotation at top of the property.
+
+or Remove Lazy Loaded properties having a relationship
+Likethis
+"	
+	@ManyToOne /* (fetch = FetchType.LAZY, optional = false) */
+	    @JoinColumn(name = "BuyerId", nullable = false)
+	    @OnDelete(action = OnDeleteAction.CASCADE)
+	private BuyerEntity buyer;  "
+
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"}) 
+Example:
+
+@Entity
+public class Product implements Serializable{
+   private int id;
+   private String name;
+   private String photo;
+   private double price;
+   private int quantity;
+   private Double rating;
+   private Provider provider;
+   private String description;
+
+   @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+   private List<Category> categories = new ArrayList<>();
+
+   @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+   private List<Photo> photos = new ArrayList<>();
+
+   // Getters & Setters
+}
+If you still have this error, please add this line of code in your application.properties file
+
+spring.jackson.serialization.fail-on-empty-beans=false
