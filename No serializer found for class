@@ -18,7 +18,7 @@ Or If you have any lazy loaded properties having a relationship. You can use thi
 or Remove Lazy Loaded properties having a relationship
 Likethis
 "	
-	@ManyToOne /* (fetch = FetchType.LAZY, optional = false) */
+	@ManyToOne     /lazy Property /* (fetch = FetchType.LAZY, optional = false) */
 	    @JoinColumn(name = "BuyerId", nullable = false)
 	    @OnDelete(action = OnDeleteAction.CASCADE)
 	private BuyerEntity buyer;  "
