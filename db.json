@@ -1,0 +1,118 @@
+{
+  "AptModel": [
+    {
+      "id": 1,
+      "firstname": "mahesh",
+      "lastname": "reddy",
+      "password": 12233,
+      "phonenumber": 123456788,
+      "age": 30,
+      "slot": 1,
+      "state": "andhra",
+      "street": "df",
+      "trainerpreference": "yes",
+      "city": "gdsg",
+      "physio": null,
+      "zip": 123,
+      "Quote": 100
+    },
+    {
+      "id": 2,
+      "firstname": "mahesh",
+      "lastname": "reddy",
+      "password": 12233,
+      "phonenumber": 123456788,
+      "age": 30,
+      "slot": 1,
+      "state": "andhra",
+      "street": "df",
+      "trainerpreference": "yes",
+      "city": "gdsg",
+      "physio": null,
+      "zip": 123,
+      "Quote": 100
+    },
+    {
+      "firstname": "REddy",
+      "lastname": "DAGGULA",
+      "email": "daggulamaheshreddy@gmail.com",
+      "phonenumber": "08464013779",
+      "street": "RAMALAYAM  VEEDHI, RAMALAYAM VEEDHI",
+      "city": "TRIPURANTHAKM",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "zip": "523326",
+      "age": "21",
+      "packageprice": "500",
+      "id": 3
+    },
+    {
+      "slot": "yes",
+      "packageprice": "400",
+      "firstname": "hello",
+      "lastname": "DAGGULA",
+      "email": "daggulamaheshreddy@gmail.com",
+      "phonenumber": "08464013779",
+      "street": "RAMALAYAM  VEEDHI, RAMALAYAM VEEDHI",
+      "city": "TRIPURANTHAKM",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "zip": "523326",
+      "age": "12",
+      "id": 4
+    },
+    {
+      "trainerpreference": "No Trainer",
+      "firstname": "fdbb",
+      "lastname": "bc",
+      "age": "gbd",
+      "email": "gbdc",
+      "phonenumber": "1234",
+      "street": "sfhtgbfng",
+      "city": "dfd",
+      "state": "bnmn",
+      "country": "nmbkjnm",
+      "zip": "1234",
+      "packageprice": "500",
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "firstname": "sd",
+      "lastname": "fb",
+      "age": "21",
+      "email": "n mmn",
+      "phonenumber": "mn kn",
+      "street": "nmb",
+      "city": "nmnm ",
+      "state": "nm ",
+      "country": "bnmb ",
+      "zip": "12345",
+      "trainerpreference": "Male",
+      "physio": "yes",
+      "slot": "Monday-1",
+      "packageprice": "500",
+      "id": 10
+    },
+    {
+      "zip": "12",
+      "phonenumber": "123",
+      "id": 11
+    },
+    {
+      "age": "345",
+      "id": 12
+    }
+  ]
+}
